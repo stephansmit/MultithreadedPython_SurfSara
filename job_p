@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 #SBATCH --partition=short
+#SBATCH -N 1
 #SBATCH -n 24
-python -m scoop scoop_main.py
+python -m scoop --host=$SLURM_JOB_NODELIST scoop_main.py
