@@ -60,7 +60,7 @@ toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
 
 def evalOneMax(individual):
-    sleep(.01)
+    sleep(.1)
     return sum(individual),
 
 

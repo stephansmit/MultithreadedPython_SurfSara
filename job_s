@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+#SBATCH --partition=short
+#SBATCH -n 24
+python scoop_main.py
