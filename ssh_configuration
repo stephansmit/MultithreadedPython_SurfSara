@@ -1,0 +1,7 @@
+#generate public and private key
+ssh-keygen -t <key_name>
+#add the public key to ~/.ssh/authorized_keys
+id_<key_name>.pub
+#add the private key to the agent
+eval `ssh-agent`
+ssh-add ~/.ssh/id_<key_name>

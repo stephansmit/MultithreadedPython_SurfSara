@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+#SBATCH --partition=short
+#SBATCH -N 2
+#SBATCH -n 48
+python make_hostfile.py
+python -m scoop --hostfile=hosts.txt scoop_main.py
