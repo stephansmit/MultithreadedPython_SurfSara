@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+#SBATCH --partition=short
+#SBATCH -n 20
+
+srun python3 myscript.py
